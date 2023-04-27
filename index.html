@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS avançado</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .card {
+            margin-top: 32px;
+        }
+
+        @media screen and (max-width: 767px) {
+            
+            .container {
+                max-width: 90%;
+                display: block
+            }
+
+            .col-4 {
+    width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            
+            .container {
+                max-width: 90%;
+                display: block
+            }
+
+            .col-4 {
+    width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Filmes em cartaz</h1>
+    <div id="carousel-volta" data-bs-ride="carousel"  class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" src="./lib/filmes.png" alt="">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./lib/1255836558-i717890.webp" alt="">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="./lib/5-filmes-sobre-mudanças-de-vida.webp" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#carousel-volta" type="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-volta" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>   
+        <div class="carousel-indicators">
+            <button class="active" type="button" data-bs-target="#carousel-volta" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-volta" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-volta" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+</div>
+    <div class="container colunas">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        Mario!
+                    </div>
+                    <img src="./lib/super-mario-bros-poster-9.webp" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">O melhor filme do ano!?</h4>
+                        <p class="card-text">Sim, o Mário, aquele atrás do armário, lançou um filme, acredita?</p>
+                        <a href="#" class="btn btn-success">Comprar ingresso</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        Batman
+                    </div>
+                    <img src="./lib/bat.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Resurgindo das trevas</h4>
+                        <p class="card-text">O vampirão virou morcego nessa.</p>
+                        <a href="#" class="btn btn-success">Comprar ingresso</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        Tom & Jerry
+                    </div>
+                    <img src="./lib/Tom-e-Jerry-O-Filme-02.webp">
+                    <div class="card-body">
+                        <h4 class="card-title">Esse filme existe?</h4>
+                        <p class="card-text">A produção procurou e disse que sim, eu só acredito vendo...</p>
+                        <a href="#" class="btn btn-success">Comprar ingresso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
